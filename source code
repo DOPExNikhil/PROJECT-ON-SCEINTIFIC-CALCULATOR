@@ -1,0 +1,174 @@
+#include <stdio.h>
+#include<stdlib.h>
+
+
+int main() 
+{
+  int t,x;
+  double a,b,c;
+  printf(" Enter 1 for Addition\n");
+  printf(" Enter 2 for Subtraction\n");
+  printf(" Enter 3 for Multiplication\n");
+  printf(" Enter 4 for Division\n");
+  printf(" Enter 5 for Ceil\n");
+  printf(" Enter 6 for Floor\n");
+  printf(" Enter 7 for Square Root\n");
+  printf(" Enter 8 for Cube Root\n");
+  printf(" Enter 9 for Power\n");
+  printf(" Enter 10 for Absolute Value\n");
+  printf(" Enter 11 for Arc cosine function\n");
+  printf(" Enter 12 for Arc sine function\n");
+  printf(" Enter 13 for Arc tangent function\n");
+  printf(" Enter 14 for atan2 function \n");
+  printf(" Enter 15 for Cosine function \n");
+  printf(" Enter 16 for Sine function\n");
+  printf(" Enter 17 for Tangent function\n\n");
+  printf(" Enter Command: ");
+   scanf("%i",&t);
+  printf("\n\n");
+  switch(t)
+    {
+      case 1: //  Addition of two no's
+              printf("Addition of 2no's \n\n");
+              printf("Enter 2no's:");
+              scanf("%lf %lf",&a,&b);
+              c=a+b;
+              printf("\nRequired Result: ");
+              printf("%0.3lf\n",c);
+             break;
+      case 2:// Subtraction of two no's     
+              printf("Subtraction of 2 no's \n\n");
+              printf("Enter 2 no's:");
+              scanf("%lf%lf",&a,&b);
+              c=a-b;
+              printf("\nRequired Result: ");
+              printf("%0.3lf",c);
+              break;
+      case 3: // Multiplication of two no's
+             printf("Multiplication of 2no's \n\n");
+             printf("Enter 2no's:");
+             scanf("%lf %lf",&a,&b);
+             c=a*b;
+             printf("\nRequired Result: ");
+             printf("%0.3lf",c);
+             break;
+      case 4: //Division of 2no's
+             printf("Division of 2 no's \n\n");
+             printf("Enter 2 no's:");
+             scanf("%lf%lf",&a,&b);
+             c=a/b;
+             printf("\nRequired Result: ");
+             printf("%0.3lf",c);
+             break;
+      case 5: //  Ceil function
+              printf("Ceil Function \n\n");
+              printf("Enter no.: ");
+              scanf("%lf",&a);
+              c=ceil(a);
+              printf("\nRequired Result: ");
+              printf("%0.3lf\n",c);
+             break;
+      case 6: //  Floor function
+              printf("Floor Function \n\n");
+              printf("Enter no.: ");
+              scanf("%lf",&a);
+              c=floor(a);
+              printf("\nRequired Result: ");
+              printf("%0.3lf\n",c);
+             break;
+      case 7: //  Square Root of a no.
+              printf("Square Root of a no. \n\n");
+              printf("Enter no.: ");
+              scanf("%lf",&a);
+              c=sqrt(a);
+              printf("\nRequired Result: ");
+              printf("%0.3lf\n",c);
+             break;
+      case 8: //  Cube Root
+              printf("Cube Root of a no. \n\n");
+              printf("Enter no.: ");
+              scanf("%lf",&a);
+              c=cbrt(a);
+              printf("\nRequired Result: ");
+              printf("%0.3lf\n",c);
+             break;
+      case 9: //  Power 
+              printf("Addition of 2no's \n\n");
+              printf("Enter 2no's:");
+              scanf("%lf %lf",&a,&b);
+              c=pow(a,b);
+              printf("\nRequired Result: ");
+              printf("%0.3lf\n",c);
+             break;
+      case 10: //  absolute of a no.
+              printf("Absolut.e of a no. \n\n");
+              printf("Enter no.: ");
+              scanf("%i",&x);
+              c=abs(x);
+              printf("\nRequired Result: ");
+              printf("%0.3lf\n",c);
+             break;
+      case 11: // acosx
+              printf("Arc cosine function \n\n");
+              printf("Enter no.: ");
+              scanf("%lf",&b);
+              c=acos(b);
+              printf("\nRequired Result: ");
+              printf("%0.3lf\n",c);
+             break;
+      case 12: //  asinx.
+              printf("Arc sine function \n\n");
+              printf("Enter no.: ");
+              scanf("%lf",&a);
+              c=asin(a);
+              printf("\nRequired Result: ");
+              printf("%0.3lf\n",c);
+             break;
+      case 13: // atanx
+              printf("Arc tangent function \n\n");
+              printf("Enter no.: ");
+              scanf("%lf",&a);
+              c=atan(a);
+              printf("\nRequired Result: ");
+              printf("%0.3lf\n",c);
+             break;
+      case 14: //  atan2
+              printf(" atan2 function \n\n");
+              printf("Enter no.(Y/X): ");
+              scanf("%lf%lf",&b,&a);
+              c=atan2(b,a);
+              printf("\nRequired Result: ");
+              printf("%0.3lf\n",c);
+             break;
+      
+      case 15: //  cos
+              printf("Cosine \n\n");
+              printf("Enter no.: ");
+              scanf("%lf",&a);
+              c=cos(a);
+              printf("\nRequired Result: ");
+              printf("%0.3lf\n",c);
+             break;
+      case 16: // sin
+              printf("Sine function \n\n");
+              printf("Enter no.: ");
+              scanf("%lf",&a);
+              c=sin(a);
+              printf("\nRequired Result: ");
+              printf("%0.3lf\n",c);
+             break;
+      case 17: //  tan
+              printf("Tangent function \n\n");
+              printf("Enter no.: ");
+              scanf("%lf",&a);
+              c=tan(a);
+              printf("\nRequired Result: ");
+              printf("%0.3lf\n",c);
+             break;
+      default:
+              printf("Error");
+              break;
+     
+    }
+  return 0;
+}
